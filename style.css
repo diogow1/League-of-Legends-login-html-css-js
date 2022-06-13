@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif ;
+}
+
+:root {
+  --white: #FFF;
+  --white-hidden: #F9F9F9;
+  --light-grey: #ECECEC;
+  --grey: #C4C4C4;
+  --medium-grey: #A7A7A7;
+  --red: #CF3C3F;
+  --blue: #1b77f3;
+  --deep-grey: #343434;
+  --black: #000000;
+}
+main{
+  display: flex;
+}
+
+.pack{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  min-height: 100vh;
+  padding: clamp(35px, 8%, 70px);
+}
+
+.loginIconRiot {
+  width: 130px;
+  margin-bottom: 80px;
+}
+
+.loginTitle {
+  color: var(--deep-grey);
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.loginLabel {
+  width: 100%;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.input{
+  width: 100%;
+  background-color: var(--light-grey);
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  outline: none;
+  font-size: 0.9em;
+  padding: 25px 10px 10px;
+  font-weight: 600;
+  color: var(--deep-grey);
+}
+
+.loginLabel span {
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--medium-grey);
+  margin: 20px;
+  cursor: text;
+  transition: all 200ms ease;
+}
+
+.input:focus {
+  background-color: var(--white-hidden);
+  border: 2px solid var(--deep-grey);
+}
+
+.login .spanOn{
+  font-size: 0.7em;
+  margin:8px 10px;
+}
+
+.loginIcon{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.loginIcon img{
+  width: 20px;
+}
+
+.iconButton {
+  display: flex;
+  width: 33.33%;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;  
+}
+
+.loginIcon .iconButton:nth-child(1){
+  background-color: var(--blue);
+}
+.loginIcon .iconButton:nth-child(2){
+  background-color: var(--light-grey);
+}
+.loginIcon .iconButton:nth-child(3){
+  background-color: var(--black);
+}
+
+.loginCheckbox {
+  width: 100%;
+  margin: 15px 0 50px;
+  font-size: 0.9em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.inputCheck {
+  width: 20px;
+  appearance: none;
+  height: 20px;
+  background-color: var(--light-grey);
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+.inputCheck:checked{
+  background-color: var(--red);
+}
+.inputCheck:checked::after{
+  display: block;
+  content:'' ;
+  width: 5px;
+  height: 10px;
+  border: 3px solid white;
+  margin: 2px 6px;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+
+}
+
+.loginButton {
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--red);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+.loginButton svg {
+  fill: white
+}
+
+.loginButton:disabled {
+  cursor: auto;
+  background-color: white;
+  border: 2px solid var(--light-grey);
+}
+
+.loginButton:disabled svg {
+  fill: var(--light-grey);
+}
+
+.loginLinks {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: var(--medium-grey);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.wallpaper{
+  width: 100%;
+  background-image: url(./imagens/wallpaperflare.com_wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+}
